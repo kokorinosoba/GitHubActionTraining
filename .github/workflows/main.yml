@@ -20,11 +20,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Run my script
-        run: dir
-
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+
+      - name: Run my script
+        run: dir
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
